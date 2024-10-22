@@ -19,8 +19,18 @@ class Veicolo {
         this.porte = porte;
         this.carburante = carburante;
     }
+
+    //Otteniamo le informazioni della vettura utilizzando il metodo informazioni()
+    informazioni(){
+        let info = `${this.marca} ${this.anno} ${this.colore} ${this.porte} ${this.carburante}`
+        return info
+    }
 }
 
 //creo una nuova istanza di veicolo che rappresenti una Fiat 2019 blu.
 const fiatBlu = new Veicolo('Fiat', 2019, 'blu', 5, 'benzina');
 console.log(fiatBlu);
+
+let infoMacchina = fiatBlu.informazioni()
+console.log(infoMacchina);
+
