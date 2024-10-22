@@ -39,8 +39,10 @@ class Veicolo {
 const fiatBlu = new Veicolo('Fiat', 2019, 'blu', 5, 'benzina');
 console.log(fiatBlu);
 
+//creo una variabile che mi dia le info sulla macchina fiatBlu
 let infoMacchina = fiatBlu.informazioni();
 console.log(infoMacchina);
 
+//creo una variabile che mi dia l'età della macchina fiatBlu
 let etaMacchina = fiatBlu.calcolaEta();
 console.log(etaMacchina);
