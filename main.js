@@ -70,7 +70,18 @@ class Automobile extends Veicolo {
 
 //creo una nuova istanza di veicolo che rappresenti una Opel 2020 nera.
 let nuovaAutomobile = new Automobile('Opel', 2020, 'nera', 4, 'benzina', '1.2i 16V ECOTEC', 1.229);
+console.log(nuovaAutomobile);
+
+
+//seleziono l'elemento con la classe opelNera nell'HTML
+let opelNeraEl = document.querySelector('.opelNera');
+
+//creo una funzione che generi il markup
+function generateMarkup() {
+    const markup = `la Opel nera del 2020 ha ${nuovaAutomobile.porte} porte ed è alimentata a ${nuovaAutomobile.carburante}`;
+    return markup
+}
 
 //stampo il numero di porte e il tipo di carburante.
-console.log(`la Opel nera del 2020 ha ${nuovaAutomobile.porte} porte ed è alimentata a ${nuovaAutomobile.carburante}`);
+opelNeraEl.innerHTML = generateMarkup();
 
