@@ -41,3 +41,17 @@ console.log(infoMacchina);
 //creo una variabile che mi dia l'età della macchina fiatBlu
 let etaMacchina = fiatBlu.calcolaEta();
 console.log(etaMacchina);
+
+/*In questo bonus, dovrai estendere la classe "Veicolo" con una nuova classe chiamata "Automobile". La classe "Automobile" eredita tutte le proprietà e i metodi della classe "Veicolo" e ne aggiunge alcuni specifici per le automobili.
+Successivamente:
+Istanziamo una nuova Automobile (Opel, 2020, nera, con 4 porte, a benzina)
+Stampiamo il numero di porte e il tipo di carburante.*/
+
+class Automobile extends Veicolo {
+    constructor(marca, anno, colore, porte, carburante, motore, cilindrata){
+        super(marca, anno, colore, porte, carburante);
+        
+        this.motore = motore;
+        this.cilindrata = cilindrata;
+    }
+}
