@@ -42,11 +42,8 @@ console.log(infoMacchina);
 let etaMacchina = fiatBlu.calcolaEta();
 console.log(etaMacchina);
 
-/*In questo bonus, dovrai estendere la classe "Veicolo" con una nuova classe chiamata "Automobile". La classe "Automobile" eredita tutte le proprietà e i metodi della classe "Veicolo" e ne aggiunge alcuni specifici per le automobili.
-Successivamente:
-Istanziamo una nuova Automobile (Opel, 2020, nera, con 4 porte, a benzina)
-Stampiamo il numero di porte e il tipo di carburante.*/
 
+//BONUS
 class Automobile extends Veicolo {
     constructor(marca, anno, colore, porte, carburante, motore, cilindrata){
         super(marca, anno, colore, porte, carburante);
@@ -72,4 +69,8 @@ class Automobile extends Veicolo {
 }
 
 //creo una nuova istanza di veicolo che rappresenti una Opel 2020 nera.
-let nuovaAutomobile = new Automobile('Opel', 2020, 'nera', 4, 'benzina', '1.2i 16V ECOTEC', 1.229)
+let nuovaAutomobile = new Automobile('Opel', 2020, 'nera', 4, 'benzina', '1.2i 16V ECOTEC', 1.229);
+
+//stampo il numero di porte e il tipo di carburante.
+console.log(`la Opel nera del 2020 ha ${nuovaAutomobile.porte} porte ed è alimentata a ${nuovaAutomobile.carburante}`);
+
