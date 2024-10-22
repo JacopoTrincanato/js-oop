@@ -1,8 +1,3 @@
-console.log('hello');
-/*In questo esercizio, dovrai creare una classe in JavaScript chiamata "Veicolo" con alcune proprietà e metodi.
-Successivamente:
-Calcoliamo l'età della vettura utilizzando il metodo calcolaEta()*/
-
 //creo una classe "Veicolo"
 class Veicolo {
     marca;
