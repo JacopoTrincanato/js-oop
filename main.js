@@ -30,7 +30,7 @@ class Veicolo {
         let data = new Date();
         let annoCorrente = data.getFullYear();
         let eta = annoCorrente - this.anno;
-        return eta;
+        return `La macchina ha ${eta} anni`;
         
     }
 }
